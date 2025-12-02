@@ -1,0 +1,81 @@
+﻿@model IEnumerable<GestionUsuarios.Models.Modulo>
+
+@{
+    ViewData["Title"] = "Asignar Permisos";
+    var role = ViewBag.Role as Microsoft.AspNetCore.Identity.IdentityRole;
+    var permisosAsignados = ViewBag.PermisosAsignados as IEnumerable<int> 
+                           ?? System.Linq.Enumerable.Empty<int>();
+}
+
+<div class="container mt-4">
+    <div class="row mb-3">
+        <div class="col">
+            <h2>@ViewData["Title"] - @role?.Name</h2>
+        </div>
+        <div class="col text-end">
+            <a asp-action="Details" asp-route-id="@role?.Id" class="btn btn-secondary">
+                <i class="fas fa-eye"></i> Detalles
+            </a>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Volver
+            </a>
+        </div>
+    </div>
+
+    <form asp-action="AsignarPermisos" asp-route-id="@role?.Id" method="post">
+        @Html.AntiForgeryToken()
+
+        @foreach (var modulo in Model.OrderBy(m => m.Orden))
+        {
+            <div class="card mb-2">
+                <div class="card-header">
+                    <strong>@modulo.NombreModulo</strong>
+                    @if (!string.IsNullOrWhiteSpace(modulo.Descripcion))
+                    {
+                        <div class="small text-muted">@modulo.Descripcion</div>
+                    }
+                </div>
+                <div class="card-body">
+                    @if (modulo.Permisos != null && modulo.Permisos.Any())
+                    {
+                        foreach (var perm in modulo.Permisos.OrderBy(p => p.NombrePermiso))
+                        {
+                            <div class="form-check">
+                                <input class="form-check-input"
+                                       type="checkbox"
+                                       name="permisos"
+                                       value="@perm.PermisoId"
+                                       id="perm-@perm.PermisoId"
+                                       checked='@(permisosAsignados.Contains(perm.PermisoId) ? "checked" : null)' />
+                                <label class="form-check-label" for="perm-@perm.PermisoId">
+                                    @perm.NombrePermiso <small class="text-muted">(@perm.CodigoPermiso)</small>
+                                </label>
+                                @if (!string.IsNullOrWhiteSpace(perm.Descripcion))
+                                {
+                                    <div class="small text-muted ms-4">@perm.Descripcion</div>
+                                }
+                            </div>
+                        }
+                    }
+                    else
+                    {
+                        <div class="text-muted">No hay permisos en este módulo.</div>
+                    }
+                </div>
+            </div>
+        }
+
+        <div class="mt-3">
+            <button type="submit" class="btn btn-success">
+                <i class="fas fa-save"></i> Guardar permisos
+            </button>
+            <a asp-action="Details" asp-route-id="@role?.Id" class="btn btn-secondary">
+                Cancelar
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

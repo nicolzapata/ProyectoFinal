@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\juanp\\source\\repos\\GestionUsuarios\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCFEAB4-C5AC-4D65-BED8-04B1F784401D}|GestionUsuarios\\GestionUsuarios.csproj|c:\\users\\juanp\\source\\repos\\gestionusuarios\\gestionusuarios\\views\\roles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCCFEAB4-C5AC-4D65-BED8-04B1F784401D}|GestionUsuarios\\GestionUsuarios.csproj|solutionrelative:gestionusuarios\\views\\roles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCFEAB4-C5AC-4D65-BED8-04B1F784401D}|GestionUsuarios\\GestionUsuarios.csproj|c:\\users\\juanp\\source\\repos\\gestionusuarios\\gestionusuarios\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCCFEAB4-C5AC-4D65-BED8-04B1F784401D}|GestionUsuarios\\GestionUsuarios.csproj|solutionrelative:gestionusuarios\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCFEAB4-C5AC-4D65-BED8-04B1F784401D}|GestionUsuarios\\GestionUsuarios.csproj|c:\\users\\juanp\\source\\repos\\gestionusuarios\\gestionusuarios\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCCFEAB4-C5AC-4D65-BED8-04B1F784401D}|GestionUsuarios\\GestionUsuarios.csproj|solutionrelative:gestionusuarios\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCFEAB4-C5AC-4D65-BED8-04B1F784401D}|GestionUsuarios\\GestionUsuarios.csproj|c:\\users\\juanp\\source\\repos\\gestionusuarios\\gestionusuarios\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCCFEAB4-C5AC-4D65-BED8-04B1F784401D}|GestionUsuarios\\GestionUsuarios.csproj|solutionrelative:gestionusuarios\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DCCFEAB4-C5AC-4D65-BED8-04B1F784401D}|GestionUsuarios\\GestionUsuarios.csproj|c:\\users\\juanp\\source\\repos\\gestionusuarios\\gestionusuarios\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DCCFEAB4-C5AC-4D65-BED8-04B1F784401D}|GestionUsuarios\\GestionUsuarios.csproj|solutionrelative:gestionusuarios\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 388,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\GestionUsuarios\\GestionUsuarios\\Views\\Roles\\Index.cshtml",
+              "RelativeDocumentMoniker": "GestionUsuarios\\Views\\Roles\\Index.cshtml",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\GestionUsuarios\\GestionUsuarios\\Views\\Roles\\Index.cshtml",
+              "RelativeToolTip": "GestionUsuarios\\Views\\Roles\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAMzMzMzMbwC8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T08:48:46.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\GestionUsuarios\\GestionUsuarios\\Views\\Usuarios\\Index.cshtml",
+              "RelativeDocumentMoniker": "GestionUsuarios\\Views\\Usuarios\\Index.cshtml",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\GestionUsuarios\\GestionUsuarios\\Views\\Usuarios\\Index.cshtml",
+              "RelativeToolTip": "GestionUsuarios\\Views\\Usuarios\\Index.cshtml",
+              "ViewState": "AgIAABgAAACALjMzMzMLwA4AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T08:48:09.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\GestionUsuarios\\GestionUsuarios\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GestionUsuarios\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\GestionUsuarios\\GestionUsuarios\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GestionUsuarios\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAABIvSsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T08:24:08.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\GestionUsuarios\\GestionUsuarios\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "GestionUsuarios\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\GestionUsuarios\\GestionUsuarios\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "GestionUsuarios\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T08:21:41.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\juanp\\source\\repos\\GestionUsuarios\\GestionUsuarios\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "GestionUsuarios\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\juanp\\source\\repos\\GestionUsuarios\\GestionUsuarios\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "GestionUsuarios\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAYwGQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-02T08:20:11.987Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

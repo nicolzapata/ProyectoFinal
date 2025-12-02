@@ -1,0 +1,115 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Registro de Usuario";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0">
+                        <i class="fas fa-user-plus"></i> @ViewData["Title"]
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label asp-for="Input.NombreCompleto" class="form-label"></label>
+                                <input asp-for="Input.NombreCompleto" class="form-control" placeholder="Ingrese su nombre completo" />
+                                <span asp-validation-for="Input.NombreCompleto" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Input.Email" class="form-label"></label>
+                                <input asp-for="Input.Email" class="form-control" autocomplete="username" placeholder="correo@ejemplo.com" />
+                                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Input.NumeroDocumento" class="form-label"></label>
+                                <input asp-for="Input.NumeroDocumento" class="form-control" placeholder="Ej: 1234567890" />
+                                <span asp-validation-for="Input.NumeroDocumento" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label asp-for="Input.PhoneNumber" class="form-label"></label>
+                                <input asp-for="Input.PhoneNumber" class="form-control" placeholder="Ej: +57 300 123 4567" />
+                                <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Input.Password" class="form-label"></label>
+                                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" placeholder="Mínimo 6 caracteres" />
+                                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                <small class="text-muted">La contraseña debe tener al menos 6 caracteres, una mayúscula y un número.</small>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Input.ConfirmPassword" class="form-label"></label>
+                                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" placeholder="Confirme su contraseña" />
+                                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label asp-for="Input.Observaciones" class="form-label"></label>
+                                <textarea asp-for="Input.Observaciones" class="form-control" rows="3" placeholder="Información adicional (opcional)"></textarea>
+                                <span asp-validation-for="Input.Observaciones" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button id="registerSubmit" type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-user-check"></i> Registrarse
+                            </button>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="text-center">
+                            <p class="mb-0">¿Ya tienes una cuenta? <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Inicia sesión aquí</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            @* Sección de login externo (opcional) *@
+            @if ((Model.ExternalLogins?.Count ?? 0) > 0)
+            {
+                <div class="card shadow mt-3">
+                    <div class="card-body">
+                        <section>
+                            <h4 class="text-center mb-3">O regístrate con:</h4>
+                            <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                                <div class="d-grid gap-2">
+                                    @foreach (var provider in Model.ExternalLogins!)
+                                    {
+                                        <button type="submit" class="btn btn-outline-primary" name="provider" value="@provider.Name" title="Registrarse usando @provider.DisplayName">
+                                            <i class="fab fa-@provider.Name.ToLower()"></i> @provider.DisplayName
+                                        </button>
+                                    }
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
